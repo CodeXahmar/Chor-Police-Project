@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Start.module.css"; // Import the CSS module
-
+import { useNavigate } from "react-router-dom";
 function Start({ id }) {
   const [isModerator, setIsModerator] = useState(false);
 
@@ -11,13 +11,13 @@ function Start({ id }) {
   const handleStartGame = () => {
     if (isModerator) {
       // Logic to start the game when the moderator checkbox is checked
+      navigate("/king");
       console.log("Game started!");
     } else {
-      // Display an alert or handle it accordingly if the moderator checkbox is not checked
       alert("You must be a moderator to start the game.");
     }
   };
-
+  const navigate = useNavigate();
   return (
     <div className={styles.parent}>
       <div className={styles.nav}>

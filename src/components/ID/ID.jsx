@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ID.module.css"; // Import the CSS module
 import { useNavigate } from "react-router-dom";
 
-function ID(props) {
+function ID({ id }) {
   const navigate = useNavigate();
   return (
     <div className={styles.parent}>
@@ -13,7 +13,7 @@ function ID(props) {
         <div className={styles["inner-container"]}>
           <h4 className={styles.box}>Room ID:</h4>
           <div>
-            <h4 className={styles.box}>#{props.id}</h4>
+            <h4 className={styles.box}>#{id}</h4>
           </div>
         </div>
         <div className={styles["btn-container"]}>

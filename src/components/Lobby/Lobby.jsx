@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./Lobby.module.css"; 
 
 
-function Lobby(props) {
+function Lobby({id}) {
   return (
     <div className={styles.parent}>
       <div className={styles.nav}>
         <h3>Lobby!</h3>
-        <h3>#{props.id}</h3>
+        <h3>#{id}</h3>
       </div>
 
       <h3 className={styles.team}>Teams:</h3>

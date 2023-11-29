@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 5px solid black;
+  padding: 10px;
+  width: 50vh;
+  border-radius: 30px;
+  height: 92vh;
+}
+
+.upper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img img {
+  width: 70px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.votes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.image img {
+  width: 40px;
+  border: 2px solid black;
+  border-radius: 23px;
+}
+.Name p {
+  font-size: small;
+}
+.mid {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+.voter h4:hover {
+  cursor: pointer;
+}
+.Target h4:hover {
+  cursor: pointer;
+}
+.row {
+  display: flex;
+}
+.rleft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pic img {
+  width: 40px;
+}
+.rmid {
+  display: flex;
+  align-items: center;
+}
+.rright {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 170px;
+}
+.Pic img {
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 23px;
+}
+.Namee p {
+  font-size: x-small;
+}
+.down1 {
+  margin-top: 20px;
+}
+.down2 {
+  margin-top: 20px;
+}

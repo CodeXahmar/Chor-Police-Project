@@ -11,6 +11,8 @@ import Moderator7 from "./components/Moderator 7/Moderator7.jsx";
 import Moderator8 from "./components/Moderator 8/Modrerator8.jsx";
 import Moderator9 from "./components/Moderator 9/Moderator9.jsx";
 import { useState } from "react";
+import King from "./components/King/King.jsx";
+import Voter from "./components/Voting Target View/Voter.jsx";
 function randomNumber() {
   return Math.floor(Math.random() * 1000000) + 1;
 }
@@ -32,6 +34,8 @@ function App() {
         <Route path="/mod7" element={<Moderator7 />} />
         <Route path="/mod8" element={<Moderator8 />} />
         <Route path="/mod9" element={<Moderator9 />} />
+        <Route path="/king" element={<King />} />
+        <Route path="/voter" element={<Voter />} />
       </Routes>
     </Router>
   );
