@@ -3,6 +3,7 @@ import chor from "./chor.jpg";
 import police from "./police.jpg";
 import doctor from "./doctor.jpg";
 import civilian from "./civilian.jpg";
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function GenerateNumber() {
@@ -10,8 +11,12 @@ function GenerateNumber() {
 }
 
 function Shuffle() {
+  const navigate = useNavigate();
   const [time, setTime] = useState(10);
   setTimeout(() => {
+    if (time === 0) {
+      navigate("/voter");
+    }
     if (time >= 1 && time <= 10) {
       setTime(time - 1);
     }

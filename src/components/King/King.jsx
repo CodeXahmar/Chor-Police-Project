@@ -3,11 +3,11 @@ import styles from "./King.module.css";
 import { useNavigate } from "react-router-dom";
 import king from "./king.jpg";
 function King() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [time, setTime] = useState(10);
   setTimeout(() => {
-    if(time==0){
-      navigate("/mod7")
+    if (time === 0) {
+      navigate("/mod7");
     }
     if (time >= 1 && time <= 10) {
       setTime(time - 1);
