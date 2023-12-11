@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+h4 {
+  font-size: 20px;
+}
 .container {
   border: 5px solid black;
   padding: 10px;
@@ -51,8 +53,10 @@
 .Target h4:hover {
   cursor: pointer;
 }
-.row {
+.roww {
   display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 .rleft {
   display: flex;
@@ -72,7 +76,6 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
-  width: 170px;
 }
 .Pic img {
   width: 30px;

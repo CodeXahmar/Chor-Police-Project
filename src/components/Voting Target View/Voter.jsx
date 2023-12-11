@@ -1,12 +1,12 @@
-import Arrowr from './Images/1.jpg';
-import Arrowl from './Images/1.jpg';
-import Kem from './Images/1.jpg';
-import Marry from './Images/1.jpg';
-import Daniel from './Images/1.jpg';
-import Joe from './Images/1.jpg';
-import Robe from './Images/1.jpg';
-import Ron from './Images/1.jpg';
-import Stephnie from './Images/1.jpg';
+import Arrowr from "./Images/Arrow right.jpg";
+import Arrowl from "./Images/Arrow left.jpg";
+import Kem from "./Images/1.jpg";
+import Marry from "./Images/2.jpg";
+import Daniel from "./Images/3.jpg";
+import Joe from "./Images/4.jpg";
+import Robe from "./Images/5.jpg";
+import Ron from "./Images/6.jpg";
+import Stephnie from "./Images/7.jpg";
 import React from "react";
 import "./Voter.css";
 let Array = [
@@ -142,7 +142,7 @@ let Voter = () => {
         <div className="down1">
           {Array[1].map((value) => {
             return (
-              <div className="row">
+              <div className="roww">
                 <div className="rleft">
                   <div className="pic">
                     <img src={value[0].url} alt="Pic" />
@@ -176,7 +176,7 @@ let Voter = () => {
         <div className="down2">
           {Array[2].map((value) => {
             return (
-              <div className="row">
+              <div className="roww">
                 <div className="rleft">
                   <div className="pic">
                     <img src={value[0].url} alt="Pic" />

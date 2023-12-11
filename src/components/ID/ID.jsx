@@ -16,7 +16,7 @@ function ID({ id }) {
             <h4 className={styles.box}>#{id}</h4>
           </div>
         </div>
-        <div className={styles["btn-container"]}>
+        <div    className={styles["btn-container"]}>
           <button
             onClick={() => navigate("/avatar")}
             className={styles["continue-btn"]}
